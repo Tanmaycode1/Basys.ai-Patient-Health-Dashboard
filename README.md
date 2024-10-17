@@ -18,7 +18,7 @@ You can access the live version of the project here:
 ### Backend (Node.js, Express, MongoDB):
 - **Patient Data API**: Fetches patient details and displays them on the frontend.
 - **Prior Authorization API**: Handles submission of prior authorization requests and stores them in MongoDB.
-  
+
 ### Bonus Features:
 - **Authentication (Optional)**: Basic authentication for providers (not implemented).
 - **Performance Optimization**: Pagination implemented for patient lists.
@@ -27,20 +27,20 @@ You can access the live version of the project here:
 ## Project Structure
 
 ```bash
-├── client                # React frontend code
-│   ├── public            # Static assets
-│   └── src               # React components and pages
-│       ├── components    # Reusable UI components
-│       ├── pages         # Main page files
-│       ├── services      # API service calls
-│       ├── App.js        # Main entry point
-│       └── index.js      # React entry point
-├── server                # Backend API code
-│   ├── controllers       # Logic for handling routes
-│   ├── models            # MongoDB schemas for Patients and Authorizations
-│   ├── routes            # API routes for patients and authorizations
-│   ├── server.js         # Express server setup
-└── README.md             # Project documentation
+├── patient-health-dashboard-frontend  # React frontend code
+│   ├── public                        # Static assets
+│   └── src                           # React components and pages
+│       ├── components                # Reusable UI components
+│       ├── pages                     # Main page files
+│       ├── services                  # API service calls
+│       ├── App.js                    # Main entry point
+│       └── index.js                  # React entry point
+├── patient-health-dashboard-backend   # Backend API code
+│   ├── controllers                   # Logic for handling routes
+│   ├── models                        # MongoDB schemas for Patients and Authorizations
+│   ├── routes                        # API routes for patients and authorizations
+│   └── server.js                     # Express server setup
+└── README.md                         # Project documentation
 ```
 
 ## Setup Instructions
@@ -57,11 +57,11 @@ You can access the live version of the project here:
 
 3. Install dependencies for both frontend and backend:
    ```bash
-   cd client && npm install
-   cd ../server && npm install
+   cd patient-health-dashboard-frontend && npm install
+   cd ../patient-health-dashboard-backend && npm install
    ```
 
-4. Create a `.env` file in the `server` folder for environment variables:
+4. Create a `.env` file in the `patient-health-dashboard-backend` folder for environment variables:
    ```
    MONGO_URI=your-mongodb-uri
    PORT=5000
@@ -69,13 +69,13 @@ You can access the live version of the project here:
 
 5. Run the backend:
    ```bash
-   cd server
-   npm start
+   cd patient-health-dashboard-backend
+   npm run dev
    ```
 
 6. Run the frontend:
    ```bash
-   cd client
+   cd patient-health-dashboard-frontend
    npm start
    ```
 
@@ -95,5 +95,4 @@ Submit a prior authorization request.
 ## Video Demonstration
 
 A video walkthrough of the functionality is available here:  
-**[Video Demonstration](https://link-to-video.com)**
-
+**[Video Demonstration](https://youtu.be/olO27-zD250)**

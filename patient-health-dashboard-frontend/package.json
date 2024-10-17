@@ -16,7 +16,7 @@
     "tailwindcss": "^3.4.14",
     "web-vitals": "^2.1.4"
   },
-  "proxy": "https://backend-production-5028.up.railway.app/",
+  "proxy": "http://localhost:5000/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
